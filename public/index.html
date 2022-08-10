@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonevs.</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
   </head>
   <body>
     <!-- Nav Start -->
@@ -406,7 +417,9 @@
     <footer class="bg-primary py-2">
       <div class="container">
         <div class="w-full text-center">
-          <h4 class="text-xs md:text-sm font-medium text-light">&copy; 2022 by Jonevs.</h4>
+          <h4 class="text-xs font-medium text-light md:text-sm">
+            &copy; 2022 by Jonevs.
+          </h4>
         </div>
       </div>
     </footer>
