@@ -1,4 +1,5 @@
-# portfolio1-tailwind
-My first personal portfolio website, built using TailwindCSS. 
+# Portfolio Website 1 
+My first personal portfolio website, built using TailwindCSS.
 
-Still incomplete, will be frequently updated.
+Still incomplete and has many bugs, will be frequently updated.
+
